@@ -12,7 +12,7 @@ function calculateSquareArea(squareSide) {
 }
 // const SquareArea = SquareSide * SquareSide;
 // console.log("Square area is: " + SquareArea + "cm^2");
-console.groupEnd;
+console.groupEnd();
 
 //Triangle code...
 console.group("Triangule calculations");
@@ -30,6 +30,17 @@ console.group("Triangule calculations");
 //     "\nTriangle height measures: " +
 //     TriangleHeight
 // );
+function calculateTriangleHeight(triangleSideA, triangleSideB, triangleBase) {
+  if (triangleSideA == triangleSideB) {
+    const triangleHeight = Math.sqrt(
+      triangleSideA ** 2 - triangleBase ** 2 / 4
+    );
+    return triangleHeight;
+  } else {
+    console.log("Sides are not equal.");
+    alert("Triangle should be isosceles.");
+  }
+}
 function calculateTrianglePerimeter(
   triangleSideA,
   triangleSideB,
@@ -44,7 +55,7 @@ function calculateTriangleArea(triangleBase, triangleHeight) {
 }
 // const TriangleArea = (TriangleBase * TriangleHeight) / 2;
 // console.log("Triangle area is: " + TriangleArea + "cm^2");
-console.groupEnd;
+console.groupEnd();
 
 //Circle code ...
 console.group("Circle calculations");
@@ -72,7 +83,7 @@ function calculateCircleArea(circleRadius) {
 }
 // const circleArea = circleRadius * circleRadius * PI;
 // console.log("circle area is: " + circleArea + "cm");
-console.groupEnd;
+console.groupEnd();
 
 // Here we interact with HTML
 function squarePerimeter() {
