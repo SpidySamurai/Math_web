@@ -73,3 +73,20 @@ function calculateCircleArea(circleRadius) {
 // const circleArea = circleRadius * circleRadius * PI;
 // console.log("circle area is: " + circleArea + "cm");
 console.groupEnd;
+
+// Here we interact with HTML
+function squarePerimeter() {
+  const input = document.getElementById("squareInput");
+  const squareSide = input.value;
+
+  const squarePerimeter = calculateSquarePerimeter(squareSide);
+  alert(squarePerimeter);
+}
+
+function squareArea() {
+  const input = document.getElementById("squareInput");
+  const squareSide = input.value;
+
+  const squareArea = calculateSquareArea(squareSide);
+  alert(squareArea);
+}
