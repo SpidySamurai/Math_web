@@ -33,3 +33,22 @@ console.log("Triangle perimeter is: " + TrianglePerimeter + "cm");
 const TriangleArea = (TriangleBase * TriangleHeight) / 2;
 console.log("Triangle area is: " + TriangleArea + "cm^2");
 console.groupEnd;
+
+//Circle code ...
+console.group("Circle calculations");
+const CircleRadius = 5;
+const CircleDiameter = CircleRadius * 2;
+const PI = Math.PI;
+console.log(
+  "Circle radius measures: " +
+    CircleRadius +
+    "\nCircle diameter measures: " +
+    CircleDiameter +
+    "\nPI: " +
+    PI
+);
+const CircleCircunference = CircleDiameter * PI;
+console.log("Circle circuference is: " + CircleCircunference + "cm");
+const CircleArea = CircleRadius * CircleRadius * PI;
+console.log("Circle area is: " + CircleArea + "cm");
+console.groupEnd;
