@@ -1,0 +1,45 @@
+/*
+    1. Positioning
+    2. Box Model
+    3. Typography
+    4. Visual effects
+    5. Other
+*/
+
+.header--principal {
+  display: flex;
+  width: 100%;
+  min-width: 32rem;
+  height: 6.5rem;
+  padding: 1rem;
+  background-color: $secondary-color;
+}
+
+.nav--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 32rem;
+  h1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: $bright-color;
+  }
+  a {
+    color: $bright-color;
+    text-decoration: none;
+  }
+}
+
+.nav--header ul {
+  display: flex;
+  list-style: none;
+  li {
+    margin-right: 1rem;
+    list-style: none;
+  }
+  a {
+    font-size: 1.4rem;
+  }
+}

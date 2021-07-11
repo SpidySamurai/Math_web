@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #333333;
+}
+
+/*
+    1. Positioning
+    2. Box Model
+    3. Typography
+    4. Visual effects
+    5. Other
+*/
+.header--principal {
+  display: flex;
+  width: 100%;
+  min-width: 32rem;
+  height: 6.5rem;
+  padding: 1rem;
+  background-color: #8841da;
+}
+
+.nav--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 32rem;
+}
+.nav--header h1 {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.nav--header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav--header ul {
+  display: flex;
+  list-style: none;
+}
+.nav--header ul li {
+  margin-right: 1rem;
+  list-style: none;
+}
+.nav--header ul a {
+  font-size: 1.4rem;
+}

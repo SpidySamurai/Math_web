@@ -1,0 +1,19 @@
+//Variables
+$Font1: "Lato", sans-serif;
+$Font2: "Oswald", sans-serif;
+$primary-color: #333333;
+$secondary-color: #8841da;
+$variant-color: #3f579a;
+$bright-color: #fff;
+//Mixins
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: $primary-color;
+}
