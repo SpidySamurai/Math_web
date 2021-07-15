@@ -1,0 +1,6 @@
+mixin box(img_src, img_desc, title, description)
+  .box 
+    .box__image: img(src="../images/"+img_src, alt=img_desc)
+    .box__content 
+      h2=title 
+      p=description
