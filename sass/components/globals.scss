@@ -7,6 +7,21 @@ $variant-color: #3f579a;
 $bright-color: #fff;
 //Mixins
 
+@mixin space-between-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@mixin card {
+  width: 85%;
+  max-width: 36rem;
+  min-width: 25rem;
+  padding: 1rem;
+  background-color: #252525;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +30,6 @@ $bright-color: #fff;
 
 html {
   font-size: 62.5%;
-  color: $primary-color;
+  color: $bright-color;
   background-color: #313131;
 }

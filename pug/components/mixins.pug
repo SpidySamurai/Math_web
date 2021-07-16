@@ -4,3 +4,32 @@ mixin box(img_src, img_desc, title, description)
     .box__content 
       h2=title 
       p=description
+
+mixin math_box(img_src, img_desc, title, description)
+  .math--box
+    .math--box__icon: img(src="../images/icons/"+img_src, alt=img_desc) 
+    .math--box__content
+      h2=title
+      if title=='Square'
+        form
+          label(for="squareInput") Write square's side
+          input(id="squareInput" type="number")
+        .math--box__content__buttons
+          button calculate perimeter
+          button calculate area
+      else if title=='Triangle'
+        form
+          label(for="") Write triangle's side
+          input(id="" type="number")
+        .math--box__content__buttons
+          button calculate perimeter
+          button calculate area
+      else if title=='Circle'
+        form
+          label(for="squareInput") Write circle's radius
+          input(id="squareInput" type="number")
+          label(for="squareInput") Write circle's radius
+          input(id="squareInput" type="number")
+        .math--box__content__buttons
+          button calculate circunference
+          button calculate area

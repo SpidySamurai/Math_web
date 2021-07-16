@@ -1,15 +1,8 @@
 .box {
-  width: 85%;
-  max-width: 36rem;
-  min-width: 25rem;
   height: auto;
   min-height: 20rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: #252525;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  @include card;
+  @include space-between-card;
   &__image {
     width: 100%;
     height: 12rem;
@@ -31,6 +24,60 @@
       margin-top: 0.5rem;
       margin-bottom: 1rem;
       font-size: 1.4rem;
+    }
+  }
+}
+
+.math--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 25rem;
+  @include card;
+  @include space-between-card;
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    img {
+      width: 100%;
+      height: 100%;
+      margin-top: 1rem;
+      // border-radius: 50%;
+    }
+  }
+  &__content {
+    width: 80%;
+    height: 70%;
+    margin-bottom: 2rem;
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      margin-top: 1rem;
+      button {
+        color: $bright-color;
+        background: none;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      label {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+      input {
+        margin-top: 1rem;
+      }
     }
   }
 }
