@@ -6,22 +6,22 @@
 
 html {
   font-size: 62.5%;
-  color: #333333;
+  color: #fff;
   background-color: #313131;
 }
 
 .box {
+  height: auto;
+  min-height: 20rem;
   width: 85%;
   max-width: 36rem;
   min-width: 25rem;
-  height: auto;
-  min-height: 20rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   padding: 1rem;
   background-color: #252525;
   border-radius: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .box__image {
   width: 100%;
@@ -44,6 +44,66 @@ html {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.4rem;
+}
+
+.math--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 25rem;
+  width: 85%;
+  max-width: 36rem;
+  min-width: 25rem;
+  padding: 1rem;
+  background-color: #252525;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.math--box__icon {
+  width: 5rem;
+  height: 5rem;
+}
+.math--box__icon img {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+.math--box__content {
+  width: 80%;
+  height: 70%;
+  margin-bottom: 2rem;
+}
+.math--box__content__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.math--box__content__buttons button {
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.math--box__content h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.math--box__content form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.math--box__content form label {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+.math--box__content form input {
+  margin-top: 1rem;
 }
 
 /*
