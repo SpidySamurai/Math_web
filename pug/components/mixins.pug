@@ -15,21 +15,21 @@ mixin math_box(img_src, img_desc, title, description)
           label(for="squareInput") Write square's side
           input(id="squareInput" type="number")
         .math--box__content__buttons
-          button calculate perimeter
-          button calculate area
+          button(type="button" onclick="squarePerimeter()") calculate perimeter
+          button(type="button" onclick="squareArea()") calculate area
       else if title=='Triangle'
         form
-          label(for="") Write triangle's side
-          input(id="" type="number")
+          label(for="triangleSideInput") Write triangle's side
+          input(id="triangleSideInput" type="number")
+          label(for="triangleBaseInput") Write triangle's base
+          input(id="triangleBaseInput" type="number")
         .math--box__content__buttons
-          button calculate perimeter
-          button calculate area
+          button(type="button" onclick="trianglePerimeter()") calculate perimeter
+          button(type="button" onclick="triangleArea()") calculate area
       else if title=='Circle'
         form
-          label(for="squareInput") Write circle's radius
-          input(id="squareInput" type="number")
-          label(for="squareInput") Write circle's radius
-          input(id="squareInput" type="number")
+          label(for="circleInput") Write circle's radius
+          input(id="circleInput" type="number")
         .math--box__content__buttons
-          button calculate circunference
-          button calculate area
+          button(type="button" onclick="circleCircunference()") calculate circunference
+          button(type="button" onclick="circleArea()") calculate area
