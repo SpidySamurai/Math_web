@@ -1,2 +1,5 @@
 /oldway
 /.vscode
+/html
+/css
+*.dev.*
