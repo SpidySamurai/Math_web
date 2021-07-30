@@ -33,3 +33,31 @@ mixin math_box(img_src, img_desc, title, description)
         .math--box__content__buttons
           button(type="button" onclick="circleCircunference()") calculate circunference
           button(type="button" onclick="circleArea()") calculate area
+
+mixin disc_box(title,description)
+  .disc--box
+    .disc--box__icon: img(src="../images/icons/price.png", alt="price image")
+    .disc--box__content
+      h2=title
+      if title=='Manual Discount'
+        form
+          label(for="inputPrice") Write item price
+          input(id="inputPrice" type="number") 
+          label(for="inputDiscount") Write item discount
+          input(id="inputDiscount" type="number") 
+      else if title=='Coupon Discount'
+        form
+          label(for="inputPriceCoupon") Write item price
+          input(id="inputPriceCoupon" type="number") 
+          label(for="inputCoupon") Write coupon code
+          input(id="inputCoupon" type="text")
+        ul.disc--box__content__coupon-list
+          li Coupon10
+          li Coupon20
+          li Coupon30
+      .disc--box__content__buttons
+        if title=='Manual Discount'
+          button(type="button" onclick="onclickButtonPriceDiscount()") calculate price
+        else if title=='Coupon Discount'
+          button(type="button" onclick="onclickButtonPriceDiscountCoupon()") calculate price
+
