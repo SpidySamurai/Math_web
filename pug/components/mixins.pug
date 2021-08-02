@@ -10,6 +10,7 @@ mixin math_box(img_src, img_desc, title, description)
     .math--box__icon: img(src="../images/icons/"+img_src, alt=img_desc) 
     .math--box__content
       h2=title
+      p=description
       if title=='Square'
         form
           label(for="squareInput") Write square's side
@@ -34,17 +35,20 @@ mixin math_box(img_src, img_desc, title, description)
           button(type="button" onclick="circleCircunference()") calculate circunference
           button(type="button" onclick="circleArea()") calculate area
 
-mixin disc_box(title,description)
+mixin disc_box(img_src, img_desc, title,description)
   .disc--box
-    .disc--box__icon: img(src="../images/icons/price.png", alt="price image")
+    .disc--box__icon: img(src="../images/icons/price.png", alt=img_desc)
     .disc--box__content
       h2=title
+      p=description
       if title=='Manual Discount'
         form
           label(for="inputPrice") Write item price
           input(id="inputPrice" type="number") 
           label(for="inputDiscount") Write item discount
           input(id="inputDiscount" type="number") 
+        .disc--box__content__button
+          button(type="button" onclick="onclickButtonPriceDiscount()") calculate price
       else if title=='Coupon Discount'
         form
           label(for="inputPriceCoupon") Write item price
@@ -55,9 +59,37 @@ mixin disc_box(title,description)
           li Coupon10
           li Coupon20
           li Coupon30
-      .disc--box__content__buttons
-        if title=='Manual Discount'
-          button(type="button" onclick="onclickButtonPriceDiscount()") calculate price
-        else if title=='Coupon Discount'
+        .disc--box__content__button
           button(type="button" onclick="onclickButtonPriceDiscountCoupon()") calculate price
 
+mixin moda_media_mediana_box(img_src, img_desc, title,description)
+  .moda_media_mediana--box
+    .moda_media_mediana--box__icon: img(src="../images/icons/cash.png" alt=img_desc)
+    .moda_media_mediana--box__content
+      h2=title
+      p=description
+      if title=='Moda'
+        form
+          label(for="inputModa") Write list of number separeted by comma
+          input(id="inputModa" type="text")
+        .moda_media_mediana--box__content__button
+          button(type="button" onclick="onClickButtonCalculateModa()") calculate moda
+      if title=='Media'
+        form
+          label(for="inputMedia") Write list of number separeted by comma
+          input(id= "inputMedia" type="text")
+        .moda_media_mediana--box__content__button
+          button(type="button" onclick="onClickButtonCalculateMedia()") calculate media
+      if title=='Mediana'
+        form
+          label(for="inputMediana") Write list of number separeted by comma
+          input(id= "inputMediana" type="text")
+        .moda_media_mediana--box__content__button
+          button(type="button" onclick="onClickButtonCalculateMediana()") calculate mediana
+
+mixin salary_box(img_src, img_desc, title,description)
+  .salary--box
+    .salary--box__icon: img(src="../images/icons/cash.png" alt=img_desc)
+    .salary--box__content
+      h2=title
+      p=description

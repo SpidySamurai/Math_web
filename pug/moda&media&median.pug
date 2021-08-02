@@ -1,0 +1,10 @@
+extend components/plantilla.pug
+block content
+  main
+    section.main__content
+      +moda_media_mediana_box('a','a','Moda','Moda calculator')
+      +moda_media_mediana_box('a','a','Media','Media calculator')
+      +moda_media_mediana_box('a','a','Mediana','Mediana calculator')
+  script(src="../js/moda.js")
+  script(src="../js/media.js")
+  script(src="../js/mediana.js")
